@@ -1,4 +1,6 @@
 #!/bin/bash
+#该脚本用于管理数据的存储周期。该脚本加入定时任务，脚本执行机器为coordinator所在服务器，并且该机器对其它服务器免登。
+
 if (( $# < 6 ));then
 	echo -e "参数输入顺序为：port DBUser DBName table column period\n  port   数据库服务器连接端口号\n  DBName 数据库超级管理员名\n  table  数据所在的表名\n  column 日期字段名\n  period  存储周期，参数格式为数字后加d或m,d代表天 m代表月以100天为例，输入参数格式为100d;以10个月为例，period参数格式为10m"
 	exit
