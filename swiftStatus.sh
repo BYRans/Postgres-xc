@@ -1,4 +1,5 @@
 #!/bin/bash
+#查看Postgres-xc集群coordinator节点和datanode节点状态
 
 function cancelOutput(){
         logFile=expect_log_temp_`date +%Y%m%d%H%M%S`
